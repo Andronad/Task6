@@ -6,13 +6,15 @@ import { StatusCodesComponent } from './components/status-codes/status-codes.com
 import { StatusCodeComponent } from './components/status-code/status-code.component';
 import {FormsModule} from "@angular/forms";
 import { StatusCodeFillPipePipe } from './pipes/status-code-fill-pipe.pipe';
+import { MyColorOnDblClickDirective } from './directives/my-color-on-dbl-click.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatusCodesComponent,
     StatusCodeComponent,
-    StatusCodeFillPipePipe
+    StatusCodeFillPipePipe,
+    MyColorOnDblClickDirective
   ],
   imports: [
     BrowserModule,FormsModule

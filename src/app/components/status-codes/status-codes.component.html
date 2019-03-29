@@ -1,4 +1,4 @@
-<p>
+<p [appMyColorOnDblClick]="'red'">
   status-codes works!
 </p>
 <div *ngFor="let code of codes| statusCodeFillPipe" (click)="getInfo(code)">
