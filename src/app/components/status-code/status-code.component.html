@@ -1,4 +1,19 @@
 <p>
   status-code works!
 </p>
-
+<table *ngIf="myCode!=null">
+  <tr>
+    <th>ID</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>ObjectTypeName</th>
+  </tr>
+  <tr>
+    <td>{{myCode.id}}</td>
+    <td>{{myCode.code}}</td>
+    <td>{{myCode.description}}</td>
+    <td>{{myCode.status}}</td>
+    <td>{{myCode.objectTypeName}}</td>
+  </tr>
+</table>

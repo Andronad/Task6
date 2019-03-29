@@ -1,6 +1,8 @@
 <p>
   status-codes works!
 </p>
-<div *ngFor="let code of codes" (click)="getInfo(code)">
+<div *ngFor="let code of codes| statusCodeFillPipe" (click)="getInfo(code)">
   {{code.code}}
 </div>
+<app-status-code [myCode]="clickedCode"></app-status-code>
+

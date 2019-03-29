@@ -9,6 +9,7 @@ import {StatusCode} from "../../models/StatusCode";
 })
 export class StatusCodesComponent implements OnInit {
   codes:StatusCode[];
+  clickedCode:StatusCode;
   constructor(private service: MyServiceService){
     this.codes=service.getCodes();
   }
@@ -16,5 +17,6 @@ export class StatusCodesComponent implements OnInit {
   }
   public getInfo(code){
     console.log(code);
+    this.clickedCode=code;
   }
 }

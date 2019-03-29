@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {StatusCode} from "../../models/StatusCode";
 
 @Component({
   selector: 'app-status-code',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status-code.component.scss']
 })
 export class StatusCodeComponent implements OnInit {
-
+  @Input() myCode:StatusCode;
   constructor() { }
 
   ngOnInit() {
