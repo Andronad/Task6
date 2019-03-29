@@ -8,9 +8,9 @@ import {forEach} from "@angular/router/src/utils/collection";
 export class StatusCodeFillPipePipe implements PipeTransform {
 
   transform(statusCodes: StatusCode[], args?: string): StatusCode[] {
-    for(let code of statusCodes){
+    statusCodes.forEach(function(code){
       code.objectTypeName=code.objectType.name;
-    }
+    });
     return statusCodes;
   }
 

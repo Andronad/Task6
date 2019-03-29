@@ -4,16 +4,23 @@
 <table *ngIf="myCode!=null">
   <tr>
     <th>ID</th>
-    <th>Code</th>
-    <th>Description</th>
-    <th>Status</th>
-    <th>ObjectTypeName</th>
+    <td>{{myCode.id}}</td>
   </tr>
   <tr>
-    <td>{{myCode.id}}</td>
+    <th>Code</th>
     <td>{{myCode.code}}</td>
+  </tr>
+  <tr>
+    <th>Description</th>
     <td>{{myCode.description}}</td>
-    <td>{{myCode.status}}</td>
+  </tr>
+  <tr>
+    <th>Object Type Name</th>
     <td>{{myCode.objectTypeName}}</td>
   </tr>
+  <tr>
+    <th>Status</th>
+    <td>{{myCode.status}}</td>
+  </tr>
+
 </table>
