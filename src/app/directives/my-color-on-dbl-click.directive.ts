@@ -1,7 +1,7 @@
 import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 @Directive({
-  selector: 'p [appMyColorOnDblClick]'
+  selector: 'button [appMyColorOnDblClick]'
 })
 export class MyColorOnDblClickDirective {
   @Input('appMyColorOnDblClick') myColor: string;

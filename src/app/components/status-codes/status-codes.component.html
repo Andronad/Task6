@@ -1,8 +1,8 @@
-<p [appMyColorOnDblClick]="'red'">
+<p>
   status-codes works!
 </p>
 <div *ngFor="let code of codes| statusCodeFillPipe" (click)="getInfo(code)">
-  <button>{{code.code}}</button>
+  <button [appMyColorOnDblClick]="'red'">{{code.code}}</button>
 </div>
 <app-status-code [myCode]="clickedCode"></app-status-code>
 
